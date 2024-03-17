@@ -11,12 +11,12 @@ If you're not sure what a shell is, check out our Primer: <https://primer.picoct
 
 ## Solution
 
-Open terminal and run this:
+Open the terminal and run this:
 
 ```shell
 ssh -p 50832 ctf-player@titan.picoctf.net
 ```
 
-then enter the password given in description.
+then enter the password given in the description.
 
 the flag would be something like this: **picoCTF{s3cur3_c0nn3ct10n_07a987ac}**

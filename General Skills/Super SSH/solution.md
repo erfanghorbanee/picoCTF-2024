@@ -12,7 +12,10 @@ If you're not sure what a shell is, check out our Primer: <https://primer.picoct
 ## Solution
 
 Open terminal and run this:
-```shell ssh -p 50832 ctf-player@titan.picoctf.net```
+
+```shell
+ssh -p 50832 ctf-player@titan.picoctf.net
+```
 
 then enter the password given in description.
 

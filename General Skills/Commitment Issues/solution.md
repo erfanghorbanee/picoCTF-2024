@@ -3,12 +3,12 @@
 ## Description
 
 I accidentally wrote the flag down. Good thing I deleted it!
-You download the challenge files here:
-challenge.zip
+You can download the challenge files here:
+[challenge.zip](https://github.com/erfanghorbanee/picoCTF-2024/blob/main/General%20Skills/Commitment%20Issues/challenge.zip)
 
 ## Solution
 
-unzip the file and go to drop-in directory in your terminal. now, run ```git log``` command to view the commits:
+unzip the file and go to the drop-in directory in your terminal. now, run ```git log``` command to view the commits:
 
 ```git
 git log

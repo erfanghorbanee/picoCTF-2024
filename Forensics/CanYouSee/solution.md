@@ -3,7 +3,7 @@
 ## Description
 
 How about some hide and seek?
-Download this file here.
+Download this file [here](https://github.com/erfanghorbanee/picoCTF-2024/blob/main/Forensics/CanYouSee/ukn_reality.jpg).
 
 ## Solution
 
@@ -42,7 +42,7 @@ Image Size                      : 4308x2875
 Megapixels                      : 12.4
 ```
 
-you noticed something interesting as well? yes, the value of Attribution URL looks like a base64 encoded string.
+Do you notice something interesting as well? yes, the value of the Attribution URL looks like a base64 encoded string.
 
 You can decode it using [this](https://www.base64decode.org/) site.
 

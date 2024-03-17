@@ -9,4 +9,4 @@ Additional details will be available after launching your challenge instance.
 
 ## Solution
 
-Just scan the QR code. You got this!
+Just scan the [QR code](https://github.com/erfanghorbanee/picoCTF-2024/blob/main/Forensics/Scan%20Surprise/flag.png). You got this!

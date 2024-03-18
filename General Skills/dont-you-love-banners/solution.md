@@ -99,6 +99,8 @@ it seems the challenge is suggesting you create a symbolic link (symlink) to fla
 
 but where should we link it to? the challenge suggests that we need to abuse the banner somehow. so let's give it a try.
 
+Note that you need to remove or rename the existing banner file before creating the symbolic link.
+
 ```shell
 mv banner banner_backup
 ln -s /root/flag.txt banner

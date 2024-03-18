@@ -28,7 +28,7 @@ Great! we got the password from this leaking server. so let's use it to connect 
 nc tethys.picoctf.net 49837
 ```
 
-the server will ask you several questions to let you in. the answers are as follows:
+the server will ask you several questions to let you in. The answers are as follows:
 
 ```cmd
 *************************************
@@ -59,7 +59,7 @@ drwxr-xr-x 1 root   root     20 Mar  9 16:39 ..
 -rw-r--r-- 1 root   root     13 Feb  7 17:25 text
 ```
 
-let's see what's inside banner and text:
+let's see what's inside the banner and text:
 
 ```shell
 player@challenge:~$ cat banner
@@ -90,12 +90,12 @@ looks like we found the flag. let's open it.
 cat: flag.txt: Permission denied
 ```
 
-As you can see, we need root access to open the file. but worry not! there is another way to get to the flag without root privilage!
+As you can see, we need root access to open the file. but worry not! there is another way to get to the flag without root privilege!
 
 look back at the hints:
 > Do you know about symlinks?
 
-it seems the challenge is suggesting you to create a symbolic link (symlink) to flag.txt that you can access without root privileges.
+it seems the challenge is suggesting you create a symbolic link (symlink) to flag.txt that you can access without root privileges.
 
 but where should we link it to? the challenge suggests that we need to abuse the banner somehow. so let's give it a try.
 
@@ -105,9 +105,9 @@ ln -s /root/flag.txt banner
 ```
 
 read this part carefully:
-**Any process that reads banner as your user and displays its contents could potentially display the contents of flag.txt instead, if it follows the symlink.**
+**Any process that reads the banner as your user and displays its contents could potentially display the contents of flag.txt instead if it follows the symlink.**
 
-but which process can do that for us? what about script.py ? let's look at it's contents:
+but which process can do that for us? what about script.py? let's look at its contents:
 
 ```shell
 cat script.py 
@@ -153,7 +153,7 @@ except:
     KeyboardInterrupt
 ```
 
-It's loading banner each time we send a request to log in to the server, which is exactly what we want.
+It's loading the banner each time we send a request to log in to the server, which is exactly what we want.
 
 Since we don't have execute permission for script.py and it's owned by root, we won't be able to run it directly. therefore, we open another tab in the terminal and connect to the server one more time so that script.py will be executed:
 

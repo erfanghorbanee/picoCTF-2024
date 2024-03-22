@@ -35,6 +35,7 @@ I used ImHex for this task. at the end of the file, I found this line: UTC_Data1
 I tried to make sense out of the numbers and realized it was our original Unix timestamp in milliseconds(2023:11:20 20:46:21.420+00:00).
 
 Therefore, we need to convert our desired value(1970:01:01 00:00:00.001+00:00) to milliseconds and replace the previous value.
+
 [This](timestamp.py) Python code will do the trick for us.
 
 the output is 1, so we modify our value to UTC_Data0000000000001.

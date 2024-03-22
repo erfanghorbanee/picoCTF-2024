@@ -24,18 +24,18 @@ exiftool "-AllDates=1970:01:01 00:00:00.001" "-DateTimeOriginal=1970:01:01 00:00
 
 this will pass all the tests and will apply all our desired modifications to the picture.
 
-However, it will fail to change one last tag which is **Time Stamp** .
+However, it will fail to change one last tag which is **Time Stamp**.
 
 It looks like we're dealing with a proprietary Samsung tag within the image metadata that isn't part of the standard EXIF fields.
 
-I tried many tools to change this but did't get any result. eventually, I decided to change to hexadecimal code of the picture manually in order to modify this metadata tag.
+I tried many tools to change this but didn't get any results. eventually, I decided to change the hexadecimal code of the picture manually in order to modify this metadata tag.
 
-I used ImHex for this task. at the end of the file I found this line: UTC_Data1700513181420
+I used ImHex for this task. at the end of the file, I found this line: UTC_Data1700513181420
 
-I tried to make sense out of the numbers and relized it was our original Unix timestamp in milliseconds(2023:11:20 20:46:21.420+00:00).
+I tried to make sense out of the numbers and realized it was our original Unix timestamp in milliseconds(2023:11:20 20:46:21.420+00:00).
 
-Therfore, we need to convert our desired value(1970:01:01 00:00:00.001+00:00) to milliseconds and replace the previus value.
-[This](timestamp.py) python code will do the trick for us.
+Therefore, we need to convert our desired value(1970:01:01 00:00:00.001+00:00) to milliseconds and replace the previous value.
+[This](timestamp.py) Python code will do the trick for us.
 
 the output is 1, so we modify our value to UTC_Data0000000000001.
 

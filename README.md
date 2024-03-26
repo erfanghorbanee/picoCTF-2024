@@ -5,7 +5,7 @@ This repository contains solutions for the picoCTF 2024 competition, a cybersecu
 ## Structure
 
 - Each challenge is organized into its own folder.
-- Contents include challenge descriptions, solutions, and any necessary code or scripts.
+- Contents include a solution.md file, and any necessary code or scripts.
 
 ## Contributing
 

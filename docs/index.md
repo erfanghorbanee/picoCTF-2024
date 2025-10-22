@@ -1,17 +1,15 @@
 # picoCTF-2024
 
-This site contains solutions for the picoCTF 2024 competition—a cybersecurity challenge aimed at educating and engaging participants. Here, you'll find walkthroughs and resources for various challenges.
+This repository contains solutions for the picoCTF 2024 competition, a cybersecurity challenge aimed at educating and engaging participants in the field. Here, you'll find walkthroughs and resources for various challenges.
 
-## What’s inside
+## Structure
 
-- Each challenge lives in its own folder.
-- Most folders include a `solution.md` walkthrough and, when needed, supporting code or scripts.
-
-Use the navigation to browse categories (Cryptography, Forensics, General Skills, Web Exploitation) and drill into individual challenges.
+- Each challenge is organized into its own folder.
+- Contents include a solution.md file, and any necessary code or scripts.
 
 ## Contributing
 
-Contributions are welcome. If you have improvements or alternative approaches, open a pull request and include a brief explanation of your changes.
+Feel free to contribute by submitting pull requests with improvements or alternative solutions.
 
 ## Disclaimer
 

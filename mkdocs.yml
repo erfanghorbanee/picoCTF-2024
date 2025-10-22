@@ -1,0 +1,9 @@
+site_name: picoCTF 2024
+site_description: Solutions and write-ups for picoCTF 2024 challenges
+site_url: https://erfanghorbanee.github.io/picoCTF-2024/
+
+theme: { name: mkdocs }
+
+nav: [ { Home: index.md }, { Cryptography: [ { interencdec: "Cryptography/interencdec/solution.md" } ] }, { Forensics: [ { "Blast from the past": "Forensics/Blast from the past/solution.md" }, { CanYouSee: "Forensics/CanYouSee/solution.md" }, { endianness-v2: "Forensics/endianness-v2/solution.md" }, { "Mob psycho": "Forensics/Mob psycho/solution.md" }, { "Scan Surprise": "Forensics/Scan Surprise/solution.md" }, { "Secret of the Polyglot": "Forensics/Secret of the Polyglot/solution.md" }, { Verify: "Forensics/Verify/solution.md" } ] }, { "General Skills": [ { "Blame Game": "General Skills/Blame Game/solution.md" }, { "Commitment Issues": "General Skills/Commitment Issues/solution.md" }, { "dont-you-love-banners": "General Skills/dont-you-love-banners/solution.md" }, { "Super SSH": "General Skills/Super SSH/solution.md" }, { "Time Machine": "General Skills/Time Machine/solution.md" } ] }, { "Web Exploitation": [ { Bookmarklet: "Web Exploitation/Bookmarklet/solution.md" }, { IntroToBurp: "Web Exploitation/IntroToBurp/solution.md" }, { WebDecode: "Web Exploitation/WebDecode/solution.md" } ] } ]
+
+markdown_extensions: [ { toc: { permalink: true } }, admonition, tables, fenced_code ]
